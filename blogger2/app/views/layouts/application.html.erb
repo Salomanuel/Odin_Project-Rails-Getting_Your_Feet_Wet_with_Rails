@@ -9,6 +9,8 @@
   </head>
 
   <body>
-    <%= yield %>
+  	<div id=topBar> <h1><%= @title %></h1> </div>
+    <div id=content><%= yield %></div>
+    <div id=bottomBar>built by Manuel</div>
   </body>
 </html>
