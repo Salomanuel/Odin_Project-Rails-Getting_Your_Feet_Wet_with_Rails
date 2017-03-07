@@ -27,6 +27,13 @@ form    	{width:400px;}
 .new_article_button {
 						display: inline-block;
 						position:fixed; top:30px; right:30px;
-						padding: 5px; background: black; color: red;
+						padding: 5px; background: black;
 						border: 2px solid black; border-radius:30%;
 						}
+/*.flash { 
+            background: black;
+            border-radius:30%; 
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            width: auto;
+          }*/
