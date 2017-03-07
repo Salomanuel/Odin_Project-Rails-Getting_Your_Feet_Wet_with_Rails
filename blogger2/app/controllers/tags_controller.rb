@@ -8,4 +8,12 @@ class TagsController < ApplicationController
 		@title = "Tags List"
 		@tags  = Tag.all
 	end
+
+	def destroy
+		@tag = Tag.find(params[:id])
+		@tag.destroy
+
+		flash.notice = "tag '#{@tag.name}' obliterated"
+		redirect_to tags_path
+	end
 end
