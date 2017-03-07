@@ -13,7 +13,10 @@
   		<h1><%= @title %></h1> 
   		<p>Blogger2 tutorial by <a href="http://tutorials.jumpstartlab.com/projects/blogger.html">JumpStartlab</a></p>
   	</div>
-    <div id=content><%= yield %></div>
+    <div id=content>
+      <p class="flash"><%= flash.notice %></p>
+      <%= yield %>  
+    </div>
     <div id=bottomBar>built by Manuel</div>
   </body>
 </html>
