@@ -1,5 +1,6 @@
 class AuthorSessionsController < ApplicationController
 	def new
+		@title = "Login"
 	end
 
 	def create
